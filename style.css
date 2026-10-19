@@ -94,15 +94,57 @@ body{font-size:15px;line-height:1.95}
 @media(max-width:580px){.sectors-hero{min-height:300px}.sector-carousel-track{gap:12px}.sector-card{flex-basis:88%}.sector-card>img{height:205px}.sector-card-content{padding:19px;min-height:200px}.sector-carousel-controls{align-items:flex-start;flex-direction:column}.sector-carousel-buttons{width:100%;justify-content:flex-start}.sector-note{padding:16px}}
 @media(prefers-reduced-motion:reduce){.sector-carousel{scroll-behavior:auto}.sector-card,.sector-card>img,.sector-expanded,.sector-expand-toggle:after{transition:none!important;animation:none!important}}
 
-/* Modern sector cards + robust food-sector image presentation */
-.sector-card{border-radius:16px;overflow:hidden;background:linear-gradient(180deg,#fff 0%,#fbfaf6 100%);cursor:pointer}
-.sector-card:focus-visible{outline:3px solid #b99762;outline-offset:4px}
-.sector-card>img{height:232px;object-fit:cover;object-position:center; background:#e9e5dc}
-.sector-card[data-sector-card]:has(h3[data-ar="الأغذية"])>img{object-position:center 48%}
-.sector-card-content{padding:24px;min-height:225px}
-.sector-card h3{letter-spacing:-.02em}
-.sector-expanded{border-top:1px solid #20354112;margin-top:14px}
-.sector-page-link{padding:8px 0}
-.sector-card:hover .sector-expand-toggle{color:#76572a}
-@media(max-width:900px){.sector-card>img{height:218px}}
-@media(max-width:580px){.sector-card>img{height:220px}.sector-card-content{padding:20px}}
+/* Modern visual system: food photography and clickable market-study cards */
+.food-visual-section{background:#eee9df}
+.food-photo-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:16px}
+.food-photo-card{position:relative;min-height:300px;overflow:hidden;border-radius:8px;background:#203541;isolation:isolate;box-shadow:0 16px 40px #142c3610}
+.food-photo-card.food-photo-wide{min-height:390px}
+.food-photo-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .65s ease}
+.food-photo-card:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#102b37ed 0%,#102b3755 50%,#102b3700 100%)}
+.food-photo-card:hover img{transform:scale(1.06)}
+.food-photo-card>div{position:absolute;inset:auto 22px 22px;color:white}
+.food-photo-card span,.market-study-content>span{font:700 10px Manrope,sans-serif;letter-spacing:.13em;color:#e0c18a}
+.food-photo-card h3{font-size:21px;margin:7px 0 0}
+.food-image-note{font-size:11px;color:#69777a;margin-top:15px}
+.market-examples{background:#f7f4ee}
+.market-study-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.market-study-card{display:flex;flex-direction:column;min-width:0;background:#fffdf8;border:1px solid #20354116;border-radius:8px;overflow:hidden;box-shadow:0 12px 34px #142c3608;transition:transform .3s ease,box-shadow .3s ease}
+.market-study-card:hover,.market-study-card:focus-visible{transform:translateY(-7px);box-shadow:0 22px 48px #142c3618}
+.market-study-card>img{display:block;width:100%;height:235px;object-fit:cover;transition:transform .7s ease}
+.market-study-card:hover>img{transform:scale(1.04)}
+.market-study-content{padding:22px;display:flex;flex-direction:column;align-items:flex-start;flex:1}
+.market-study-content h3{font-size:27px;margin:6px 0}
+.market-study-content p{font-size:13px;line-height:1.95;color:#68777b;flex:1}
+.market-study-content b{font-size:12px;color:#9b7845;margin-top:10px}
+.sector-tile,.sector-detail,.service-card,.btn{border-radius:5px}
+@media(max-width:850px){.food-photo-grid{grid-template-columns:1fr 1fr}.food-photo-wide{grid-column:1/-1}.market-study-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.food-photo-grid,.market-study-grid{grid-template-columns:1fr}.food-photo-card,.food-photo-card.food-photo-wide{min-height:260px;grid-column:auto}.market-study-card>img{height:220px}}
+
+
+/* RASEEN homepage refinement: brand-led hero and polished market-study cards */
+.hero .container{padding-block:42px}
+.hero-brand{display:inline-flex;align-items:center;gap:16px;margin-bottom:28px;padding:12px 18px 12px 16px;border:1px solid #ffffff35;background:linear-gradient(120deg,#102b37a8,#102b3745);backdrop-filter:blur(8px);box-shadow:0 18px 48px #071a2240;animation:brand-arrive .9s cubic-bezier(.2,.7,.2,1) both}
+.hero-brand-mark{width:64px;height:64px;flex:0 0 auto;filter:drop-shadow(0 4px 12px #d5b77f25)}
+.hero-brand strong{display:block;font-family:'IBM Plex Sans Arabic',sans-serif;font-size:clamp(30px,3.4vw,43px);line-height:1.15;letter-spacing:0;color:#fff}
+.hero-brand small{display:block;margin-top:6px;font:700 9px Manrope,sans-serif;letter-spacing:.16em;color:#e0c18a}
+.hero .eyebrow{margin-top:0}
+.market-examples{position:relative;overflow:hidden;background:linear-gradient(180deg,#eee9df 0%,#f7f4ee 100%)}
+.market-examples:before{content:"";position:absolute;top:0;inset-inline-start:8%;width:190px;height:1px;background:linear-gradient(90deg,transparent,#b99762,transparent)}
+.market-study-grid{align-items:stretch}
+.market-study-card{position:relative;isolation:isolate;will-change:transform}
+.market-study-card:nth-child(1){transition-delay:0ms}
+.market-study-card:nth-child(2){transition-delay:90ms}
+.market-study-card:nth-child(3){transition-delay:180ms}
+.market-study-card:before{content:"";position:absolute;inset:0;border:1px solid #b9976240;opacity:0;pointer-events:none;transition:opacity .3s ease;z-index:2;border-radius:inherit}
+.market-study-card:hover:before,.market-study-card:focus-visible:before{opacity:1}
+.market-study-card>img{flex:0 0 auto;transform-origin:center}
+.market-study-content{gap:3px}
+.market-study-content .market-city{font-size:12px;color:#8a7048;margin:0 0 7px}
+.market-study-content .market-city strong{color:#203541}
+.market-study-content b{display:flex;align-items:center;gap:8px}
+.market-study-content b span{display:inline-block;transition:transform .25s ease}
+.market-study-card:hover .market-study-content b span,.market-study-card:focus-visible .market-study-content b span{transform:translateX(-4px)}
+@keyframes brand-arrive{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:850px){.hero-brand{margin-bottom:22px}.hero-brand-mark{width:54px;height:54px}.market-study-card>img{height:215px}}
+@media(max-width:520px){.hero .container{padding-block:32px}.hero-brand{gap:12px;padding:10px 13px;margin-bottom:20px}.hero-brand-mark{width:46px;height:46px}.hero-brand small{font-size:7px;letter-spacing:.1em}.market-study-content{padding:20px}.market-study-card>img{height:230px}}
+@media(prefers-reduced-motion:reduce){.hero-brand{animation:none}}
