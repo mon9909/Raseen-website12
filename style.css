@@ -93,3 +93,16 @@ body{font-size:15px;line-height:1.95}
 @media(max-width:900px){.sector-card{flex-basis:calc((100% - 18px)/2)}.sector-card>img{height:205px}}
 @media(max-width:580px){.sectors-hero{min-height:300px}.sector-carousel-track{gap:12px}.sector-card{flex-basis:88%}.sector-card>img{height:205px}.sector-card-content{padding:19px;min-height:200px}.sector-carousel-controls{align-items:flex-start;flex-direction:column}.sector-carousel-buttons{width:100%;justify-content:flex-start}.sector-note{padding:16px}}
 @media(prefers-reduced-motion:reduce){.sector-carousel{scroll-behavior:auto}.sector-card,.sector-card>img,.sector-expanded,.sector-expand-toggle:after{transition:none!important;animation:none!important}}
+
+/* Modern sector cards + robust food-sector image presentation */
+.sector-card{border-radius:16px;overflow:hidden;background:linear-gradient(180deg,#fff 0%,#fbfaf6 100%);cursor:pointer}
+.sector-card:focus-visible{outline:3px solid #b99762;outline-offset:4px}
+.sector-card>img{height:232px;object-fit:cover;object-position:center; background:#e9e5dc}
+.sector-card[data-sector-card]:has(h3[data-ar="الأغذية"])>img{object-position:center 48%}
+.sector-card-content{padding:24px;min-height:225px}
+.sector-card h3{letter-spacing:-.02em}
+.sector-expanded{border-top:1px solid #20354112;margin-top:14px}
+.sector-page-link{padding:8px 0}
+.sector-card:hover .sector-expand-toggle{color:#76572a}
+@media(max-width:900px){.sector-card>img{height:218px}}
+@media(max-width:580px){.sector-card>img{height:220px}.sector-card-content{padding:20px}}

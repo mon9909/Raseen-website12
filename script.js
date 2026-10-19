@@ -19,6 +19,15 @@
  cards.forEach(card=>{
    const toggle=card.querySelector('.sector-expand-toggle');
    const panel=card.querySelector('.sector-expanded');
+   card.setAttribute('tabindex','0');
+   card.setAttribute('aria-label', document.documentElement.lang==='ar' ? 'اضغط لعرض تفاصيل القطاع' : 'Click to view sector details');
+   card.addEventListener('click',event=>{
+     if(event.target.closest('button,a')) return;
+     toggle?.click();
+   });
+   card.addEventListener('keydown',event=>{
+     if((event.key==='Enter'||event.key===' ') && event.target===card){event.preventDefault();toggle?.click();}
+   });
    toggle?.addEventListener('click',()=>{
      const opening=toggle.getAttribute('aria-expanded')!=='true';
      toggle.setAttribute('aria-expanded',String(opening));
