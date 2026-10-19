@@ -169,3 +169,57 @@ body{font-size:15px;line-height:1.95}
 @media(max-width:850px){.hero-brand{gap:10px;padding:8px 12px;margin-bottom:18px}.hero-brand-mark{width:36px;height:36px}.hero-brand strong{font-size:28px}.hero-brand small{font-size:7px}}
 @media(max-width:520px){.hero-brand{gap:9px;padding:7px 10px;margin-bottom:16px}.hero-brand-mark{width:31px;height:31px}.hero-brand strong{font-size:25px}.hero-brand small{font-size:6px;letter-spacing:.08em}.market-study-card>img{height:220px}}
 @media(prefers-reduced-motion:reduce){.sector-tile img,.sector-tile .sector-overlay-copy,.sector-tile h3,.market-study-card{transition:none!important;animation:none!important}}
+
+
+/* Final homepage clarity pass: refined hero identity and always-visible market examples */
+.hero-brand{display:inline-flex;align-items:center;gap:14px;margin:0 0 26px;padding:12px 20px 12px 13px;border:1px solid #d5b77f66;border-radius:3px;background:linear-gradient(115deg,#102b37e8,#102b3799);box-shadow:0 14px 38px #071a2238;backdrop-filter:blur(10px);max-width:100%}
+.hero-brand-emblem{width:54px;height:54px;display:grid;place-items:center;flex:0 0 auto;border:1px solid #d5b77f85;background:#d5b77f10}
+.hero-brand-mark{display:block;width:39px;height:39px;filter:drop-shadow(0 2px 7px #d5b77f25)}
+.hero-brand-type{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.hero-brand strong{font-family:'IBM Plex Sans Arabic',sans-serif;font-size:35px;line-height:1.15;font-weight:700;letter-spacing:0;color:#fff;white-space:nowrap}
+.hero-brand small{display:block;margin-top:6px;font:700 9px Manrope,sans-serif;letter-spacing:.12em;color:#e0c18a;white-space:nowrap}
+.hero-brand small i{font-style:normal;color:#fff8;margin:0 4px}
+.hero-actions{gap:10px}
+.market-examples{scroll-margin-top:88px;position:relative;isolation:isolate;background:linear-gradient(180deg,#eee9df 0%,#faf8f3 100%)}
+.market-examples .section-heading{position:relative;z-index:1}
+.market-examples .section-heading h2{max-width:650px}
+.market-examples .market-study-grid{position:relative;z-index:1}
+.market-study-card{opacity:1;transform:none;visibility:visible}
+.market-study-card>img{background:#d8d1c4}
+@media(max-width:850px){.hero-brand{gap:11px;padding:10px 15px 10px 11px;margin-bottom:22px}.hero-brand-emblem{width:47px;height:47px}.hero-brand-mark{width:34px;height:34px}.hero-brand strong{font-size:30px}.hero-brand small{font-size:8px;letter-spacing:.08em}.hero-actions{gap:9px}}
+@media(max-width:520px){.hero-brand{gap:9px;padding:8px 11px 8px 8px;margin-bottom:20px}.hero-brand-emblem{width:40px;height:40px}.hero-brand-mark{width:29px;height:29px}.hero-brand strong{font-size:27px}.hero-brand small{font-size:6px;letter-spacing:.06em}.hero-actions .btn{padding:11px 13px;font-size:12px}.market-examples .section-heading h2{font-size:30px}}
+
+
+/* Refined homepage brand lockup */
+.hero .hero-brand{display:flex;align-items:center;width:max-content;max-width:100%;gap:15px;margin:0 auto 28px;padding:13px 20px;border:1px solid rgba(213,183,127,.48);border-radius:5px;background:linear-gradient(135deg,rgba(16,43,55,.96),rgba(16,43,55,.72));box-shadow:0 12px 32px rgba(7,26,34,.2);backdrop-filter:blur(8px)}
+.hero .hero-brand-emblem{width:48px;height:48px;border:1px solid rgba(213,183,127,.65);border-radius:3px;background:rgba(213,183,127,.07)}
+.hero .hero-brand-mark{width:32px;height:32px;filter:drop-shadow(0 2px 5px rgba(213,183,127,.18))}
+.hero .hero-brand-type{gap:2px}
+.hero .hero-brand strong{font-size:clamp(27px,3vw,34px);line-height:1.2;letter-spacing:0}
+.hero .hero-brand small{font-size:8px;letter-spacing:.1em;margin-top:3px}
+@media(max-width:520px){.hero .hero-brand{gap:10px;padding:9px 12px;margin-bottom:22px}.hero .hero-brand-emblem{width:40px;height:40px}.hero .hero-brand-mark{width:27px;height:27px}.hero .hero-brand strong{font-size:26px}.hero .hero-brand small{font-size:6px;letter-spacing:.055em}}
+
+/* Consistent, balanced RASEEN brand across header and footer */
+.site-header .brand,.site-footer .brand{gap:11px;min-width:0}
+.site-header .brand-mark,.site-footer .brand-mark{width:38px;height:38px;flex:0 0 auto;padding:4px;border:1px solid rgba(185,151,98,.62);border-radius:3px;background:rgba(185,151,98,.06)}
+.site-header .brand strong,.site-footer .brand strong{display:block;font-family:'IBM Plex Sans Arabic',sans-serif;font-size:23px;line-height:1.15;white-space:nowrap}
+.site-header .brand small,.site-footer .brand small{font-size:7px;letter-spacing:.09em;white-space:nowrap}
+@media(max-width:520px){.site-header .brand{gap:7px}.site-header .brand-mark{width:32px;height:32px;padding:3px}.site-header .brand strong{font-size:20px}.site-header .brand small{font-size:6px;letter-spacing:.045em}}
+
+/* Logo layout refinement only: preserve the existing mark, lettering and colors. */
+.site-header .brand,
+.site-footer .brand{display:flex;align-items:center;gap:10px;}
+.site-header .brand-mark,
+.site-footer .brand-mark{width:36px;height:36px;flex:0 0 36px;padding:0;border:0;border-radius:0;background:transparent;}
+.site-header .brand strong,
+.site-footer .brand strong{font-size:22px;line-height:1.2;}
+.site-header .brand small,
+.site-footer .brand small{font-size:7px;line-height:1.35;letter-spacing:.07em;}
+.hero .hero-brand{display:flex;align-items:center;justify-content:flex-start;width:max-content;max-width:100%;gap:12px;margin:0 0 24px;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;backdrop-filter:none;}
+.hero .hero-brand-emblem{display:grid;place-items:center;width:42px;height:42px;flex:0 0 42px;border:0;border-radius:0;background:transparent;}
+.hero .hero-brand-mark{display:block;width:36px;height:36px;filter:none;}
+.hero .hero-brand-type{display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-width:0;}
+.hero .hero-brand strong{font-size:clamp(27px,2.8vw,32px);line-height:1.2;}
+.hero .hero-brand small{font-size:8px;letter-spacing:.08em;line-height:1.4;margin-top:2px;}
+@media(max-width:850px){.site-header .brand-mark{width:33px;height:33px;flex-basis:33px}.site-header .brand strong{font-size:21px}.hero .hero-brand{margin-bottom:20px}.hero .hero-brand-emblem{width:38px;height:38px;flex-basis:38px}.hero .hero-brand-mark{width:32px;height:32px}}
+@media(max-width:520px){.site-header .brand{gap:7px}.site-header .brand-mark{width:30px;height:30px;flex-basis:30px}.site-header .brand strong{font-size:19px}.site-header .brand small{font-size:6px;letter-spacing:.035em}.hero .hero-brand{gap:9px;margin-bottom:18px}.hero .hero-brand-emblem{width:34px;height:34px;flex-basis:34px}.hero .hero-brand-mark{width:29px;height:29px}.hero .hero-brand strong{font-size:25px}.hero .hero-brand small{font-size:6px;letter-spacing:.045em}}

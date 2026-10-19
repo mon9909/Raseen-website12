@@ -6,7 +6,8 @@ A bilingual Arabic/English multi-page static website designed for GitHub Pages.
 - `index.html` — home page
 - `about.html`, `services.html`, `sectors.html`, `approach.html`, `insights.html`
 - Individual sector pages such as `sector-real-estate.html`, `sector-energy.html`, and others
-- `market-entry.html` — pre-market entry assessment and high-level market orientations for Morocco, Saudi Arabia, and Ethiopia
+- `market-entry.html` — pre-market entry assessment and high-level market orientations for Portugal, Morocco, and Ethiopia
+- `market-study-portugal.html`, `market-study-morocco.html`, `market-study-ethiopia.html` — individual market study pages
 - `privacy.html` — general privacy policy
 - `inquiry.html` — inquiry form
 - `style.css`, `script.js`, `.nojekyll`
@@ -24,11 +25,6 @@ In GitHub, open **Settings → Pages** and verify deployment from branch `main`,
 The website uses external Google Fonts and Unsplash images, so those resources require an internet connection.
 
 
-## Country-card photography credits
+## Country photography
 
-The market-study cards and matching country-study hero images use real photographs from Wikimedia Commons:
-- Riyadh Skyline.jpg — B.alotaby, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Riyadh_Skyline.jpg
-- Hassan II Mosque Plaza.jpg — FuriousYogi, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Hassan_II_Mosque_Plaza.jpg
-- Addis Ababa skyline.jpg — Simfan34, CC BY-SA 3.0: https://commons.wikimedia.org/wiki/File:Addis_Ababa_skyline.jpg
-
-The images are location-specific photographs, not AI-generated. Retain attribution and applicable share-alike terms when redistributing the site.
+Country-card and study-page photography uses real city photographs from Unsplash. Image credits are not displayed on the website.
