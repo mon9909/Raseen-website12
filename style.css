@@ -8,3 +8,46 @@ body{font-family:'Noto Kufi Arabic','Noto Sans Arabic',Arial,sans-serif}
 .prose p,.prose li{line-height:2}
 .sector-tile img,.insight-card img,.insight-list img{display:block}
 @media(max-width:850px){.page-hero{min-height:320px}.header-inner{gap:10px}.brand small{font-size:7px}}
+
+/* RASEEN polish: typography, balanced spacing, sector interactions */
+body{font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:400;letter-spacing:0}
+h1,h2,h3,h4,.btn,.nav{font-family:'IBM Plex Sans Arabic',sans-serif}
+body{font-size:15px;line-height:1.95}
+.container{width:min(1240px,calc(100% - 56px))}
+.section-pad{padding:clamp(64px,7vw,100px) 0}
+.intro-grid{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(36px,6vw,88px);align-items:center}
+.intro-copy{max-width:600px}
+.intro-copy h2{font-size:clamp(32px,4vw,54px);line-height:1.42;letter-spacing:-.025em}
+.intro-copy p:not(.eyebrow){font-size:16px;line-height:2.05}
+.visual{height:clamp(320px,34vw,460px);border-radius:2px}
+.visual img{object-position:center}
+.service-grid{gap:0}
+.service-card{padding:clamp(20px,2.3vw,32px);min-height:265px;display:flex;flex-direction:column;align-items:flex-start;transition:background .3s ease,transform .3s ease,box-shadow .3s ease}
+.service-card h3{font-size:clamp(16px,1.4vw,20px);line-height:1.6;margin:12px 0 4px}
+.service-card p{font-size:13px;line-height:1.9;margin:4px 0 0}
+.service-card .sym{margin-top:18px}
+.service-card:hover,.service-card:focus-visible{position:relative;z-index:1;background:#eee7da;box-shadow:0 14px 34px #20354112;transform:translateY(-5px)}
+.sector-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.sector-tile{height:clamp(250px,25vw,330px);border-radius:2px;isolation:isolate}
+.sector-tile img{position:absolute;inset:0;z-index:-2}
+.sector-tile:after{background:linear-gradient(0deg,#102b37ed 0%,#102b3760 46%,#102b3710 100%);transition:background .35s ease}
+.sector-tile span{top:17px;right:20px;font:700 11px Manrope,sans-serif;letter-spacing:.08em}
+.sector-tile h3{right:22px;left:18px;bottom:34px;margin:0;font-size:clamp(20px,2vw,27px);line-height:1.5;transition:transform .3s ease}
+.sector-overlay-copy{position:absolute;z-index:1;right:22px;left:20px;bottom:12px;margin:0;color:#e2e8e8;font-size:12px;opacity:0;transform:translateY(8px);transition:opacity .3s ease,transform .3s ease}
+.sector-tile:hover .sector-overlay-copy,.sector-tile:focus-visible .sector-overlay-copy{opacity:1;transform:translateY(0)}
+.sector-tile:hover h3,.sector-tile:focus-visible h3{transform:translateY(-19px)}
+.sector-tile:hover img,.sector-tile:focus-visible img{transform:scale(1.07)}
+.sector-detail-grid{gap:20px;align-items:stretch}
+.sector-detail{display:flex;flex-direction:column;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}
+.sector-detail:hover,.sector-detail:focus-visible{transform:translateY(-5px);box-shadow:0 16px 35px #20354112}
+.sector-detail img{width:100%;height:210px;flex-shrink:0}
+.sector-detail>div{display:flex;flex:1;flex-direction:column;align-items:flex-start;padding:22px}
+.sector-detail h3{font-size:20px;line-height:1.5}
+.sector-detail p{font-size:14px;line-height:2;margin:8px 0 16px}
+.sector-detail strong{margin-top:auto;color:#a27d43;font-size:12px}
+.page-hero h1{font-weight:700;letter-spacing:-.025em}
+.eyebrow{letter-spacing:.12em}
+.btn{font-size:13px;padding:13px 22px}
+.site-footer .footer-bottom span:last-child{color:#b7c2c4}
+@media(max-width:850px){.container{width:calc(100% - 36px)}.intro-grid{grid-template-columns:1fr;gap:26px}.visual{height:340px}.sector-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.sector-tile{height:270px}.sector-overlay-copy{opacity:1;transform:none}.sector-tile h3{transform:translateY(-16px)}}
+@media(max-width:520px){.container{width:calc(100% - 30px)}.intro-copy h2{font-size:32px}.visual{height:260px}.sector-grid,.sector-detail-grid{grid-template-columns:1fr}.sector-tile{height:250px}.sector-tile h3{font-size:23px}.sector-overlay-copy{font-size:12px}}
