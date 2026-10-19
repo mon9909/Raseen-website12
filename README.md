@@ -1,9 +1,24 @@
-# RASEEN 2.0 — GitHub Pages
+# RASEEN Website — Version 2.2
 
-1. احتفظ بنسخة احتياطية من موقعك الحالي (نزّل ZIP أو ارفع النسخة القديمة داخل مجلد `backup-v1`).
-2. فك ضغط هذا الملف، ثم ارفع **محتويات** مجلد `RASEEN_2.0` إلى جذر المستودع بحيث يكون `index.html` في الجذر.
-3. Commit changes برسالة مثل `Update RASEEN website to v2.0`.
-4. من Settings > Pages اختر Deploy from a branch ثم main و /(root).
-5. انتظر النشر ثم حدّث الموقع باستخدام Ctrl+F5.
+A bilingual Arabic/English multi-page static website designed for GitHub Pages.
 
-قبل الإطلاق: استبدل `YOUR_EMAIL@example.com` في `inquiry.html` ببريد الشركة. النموذج يفتح تطبيق البريد ولا يخزن الطلبات. الصور والخطوط خارجية وتتطلب الإنترنت.
+## Files
+- `index.html` — home page
+- `about.html`, `services.html`, `sectors.html`, `approach.html`, `insights.html`
+- Individual sector pages such as `sector-real-estate.html`, `sector-energy.html`, and others
+- `market-entry.html` — pre-market entry assessment and high-level market orientations for Morocco, Saudi Arabia, and Ethiopia
+- `privacy.html` — general privacy policy
+- `inquiry.html` — inquiry form
+- `style.css`, `script.js`, `.nojekyll`
+
+## Publish/update on GitHub Pages
+Upload the *contents* of this folder to the repository root (so `index.html` is directly in the repository root), then commit the changes. Keep the current repository backup ZIP before replacing files.
+
+In GitHub, open **Settings → Pages** and verify deployment from branch `main`, folder `/(root)`.
+
+## Before launch
+1. In `inquiry.html`, replace `YOUR_EMAIL@example.com` with the real business email.
+2. Review the privacy policy with a qualified legal professional and align it with the actual data-handling process and any tools used by the site.
+3. Verify the live site, mobile layout, images, bilingual switching, and links after publishing.
+
+The website uses external Google Fonts and Unsplash images, so those resources require an internet connection.
