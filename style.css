@@ -148,3 +148,24 @@ body{font-size:15px;line-height:1.95}
 @media(max-width:850px){.hero-brand{margin-bottom:22px}.hero-brand-mark{width:54px;height:54px}.market-study-card>img{height:215px}}
 @media(max-width:520px){.hero .container{padding-block:32px}.hero-brand{gap:12px;padding:10px 13px;margin-bottom:20px}.hero-brand-mark{width:46px;height:46px}.hero-brand small{font-size:7px;letter-spacing:.1em}.market-study-content{padding:20px}.market-study-card>img{height:230px}}
 @media(prefers-reduced-motion:reduce){.hero-brand{animation:none}}
+
+
+/* Verified layout fixes: keep sector photography visible and maintain readable overlays. */
+.sector-tile{isolation:isolate;overflow:hidden;background:#203541;position:relative}
+.sector-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:0;transition:transform .7s ease;}
+.sector-tile:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,#102b37ed 0%,#102b3760 46%,#102b3710 100%);pointer-events:none;}
+.sector-tile span,.sector-tile h3,.sector-tile .sector-overlay-copy{z-index:2}
+.sector-tile span{position:absolute;top:17px;right:20px;color:#e0c18a}
+.sector-tile h3{position:absolute;right:22px;left:18px;bottom:34px;margin:0;line-height:1.5;}
+.sector-tile .sector-overlay-copy{position:absolute;right:22px;left:20px;bottom:12px;margin:0;color:#f0f2f2;font-size:12px;opacity:0;transform:translateY(8px);transition:opacity .3s ease,transform .3s ease;}
+.sector-tile:hover .sector-overlay-copy,.sector-tile:focus-visible .sector-overlay-copy{opacity:1;transform:translateY(0)}
+.sector-tile:hover h3,.sector-tile:focus-visible h3{transform:translateY(-19px)}
+.sector-tile:hover img,.sector-tile:focus-visible img{transform:scale(1.06)}
+/* Balanced brand lockup: visible but no longer dominates the hero. */
+.hero-brand{gap:11px;margin-bottom:20px;padding:8px 13px;box-shadow:0 12px 30px #071a2228;}
+.hero-brand-mark{width:40px;height:40px;flex:0 0 auto;}
+.hero-brand strong{font-size:clamp(25px,2.5vw,31px);line-height:1.2;}
+.hero-brand small{font-size:8px;letter-spacing:.12em;margin-top:4px;}
+@media(max-width:850px){.hero-brand{gap:10px;padding:8px 12px;margin-bottom:18px}.hero-brand-mark{width:36px;height:36px}.hero-brand strong{font-size:28px}.hero-brand small{font-size:7px}}
+@media(max-width:520px){.hero-brand{gap:9px;padding:7px 10px;margin-bottom:16px}.hero-brand-mark{width:31px;height:31px}.hero-brand strong{font-size:25px}.hero-brand small{font-size:6px;letter-spacing:.08em}.market-study-card>img{height:220px}}
+@media(prefers-reduced-motion:reduce){.sector-tile img,.sector-tile .sector-overlay-copy,.sector-tile h3,.market-study-card{transition:none!important;animation:none!important}}

@@ -22,3 +22,13 @@ In GitHub, open **Settings → Pages** and verify deployment from branch `main`,
 3. Verify the live site, mobile layout, images, bilingual switching, and links after publishing.
 
 The website uses external Google Fonts and Unsplash images, so those resources require an internet connection.
+
+
+## Country-card photography credits
+
+The market-study cards and matching country-study hero images use real photographs from Wikimedia Commons:
+- Riyadh Skyline.jpg — B.alotaby, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Riyadh_Skyline.jpg
+- Hassan II Mosque Plaza.jpg — FuriousYogi, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Hassan_II_Mosque_Plaza.jpg
+- Addis Ababa skyline.jpg — Simfan34, CC BY-SA 3.0: https://commons.wikimedia.org/wiki/File:Addis_Ababa_skyline.jpg
+
+The images are location-specific photographs, not AI-generated. Retain attribution and applicable share-alike terms when redistributing the site.
