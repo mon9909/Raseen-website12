@@ -251,11 +251,13 @@ body{font-size:15px;line-height:1.95}
 @media(max-width:720px){.hero .hero-brand strong{font-size:30px;letter-spacing:.1em}.hero .hero-brand small{font-size:9px}}
 @media(max-width:520px){.hero .hero-brand strong{font-size:26px;letter-spacing:.08em}.hero .hero-brand small{font-size:8px}}
 
-/* Discreet privacy link at the end of the homepage, before the main footer. */
-.home-privacy-note{padding:13px 0;border-top:1px solid rgba(185,151,98,.16);background:#f7f5f0;color:#647078;font-size:11px}
-.home-privacy-note .container{display:flex;align-items:center;justify-content:center;gap:9px}
-.home-privacy-note a{color:#8b7043;text-decoration:none;border-bottom:1px solid rgba(139,112,67,.35);transition:color .2s,border-color .2s}
-.home-privacy-note a:hover{color:#173642;border-color:#173642}
+/* Client confidentiality statement at the end of the homepage, before the main footer. */
+.home-privacy-note{padding:38px 0 42px;border-top:1px solid rgba(185,151,98,.22);background:#f7f5f0;color:#647078;font-size:13px}
+.home-privacy-note .container{display:block;max-width:920px}
+.home-privacy-note .eyebrow{margin:0 0 8px}
+.home-privacy-note h2{margin:0 0 12px;color:#203541;font-size:clamp(22px,3vw,30px);line-height:1.45}
+.home-privacy-note p:last-child{margin:0;line-height:2;color:#647078}
+@media(max-width:520px){.home-privacy-note{font-size:12px;padding:28px 0 32px}.home-privacy-note h2{font-size:23px}}
 /* Refined homepage wordmark: original emblem and palette retained, with clearer visual hierarchy. */
 .hero .hero-brand{gap:18px;margin-bottom:28px;position:relative}
 .hero .hero-brand-emblem{width:58px;height:58px;flex-basis:58px;position:relative}
