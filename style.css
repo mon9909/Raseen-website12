@@ -317,7 +317,7 @@ em, i, cite, dfn, var { font-style: normal; }
 /* Consistent non-italic Arabic across headings, emphasized phrases and card copy */
 html[lang="ar"] body,html[lang="ar"] body *{font-style:normal}
 
-.hero{background-image:linear-gradient(90deg,#102b37ed 0%,#102b37b8 48%,#102b3740 100%),url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=85");background-position:center;background-size:cover}
+.hero{background-image:linear-gradient(90deg,#102b37ed 0%,#102b37b8 48%,#102b3740 100%),url("https://images.unsplash.com/photo-1757774698963-b23f4b273adc?auto=format&fit=crop&w=1800&q=85");background-position:center;background-size:cover}
 
 
 
@@ -334,3 +334,10 @@ html[lang="ar"] .hero em, html[lang="ar"] .section-heading em, html[lang="ar"] .
 .site-header .brand small,.site-footer .brand small{font-size:9px;letter-spacing:.08em;}
 .site-header .brand{gap:13px;}
 @media(max-width:520px){.site-header .brand-mark,.site-footer .brand-mark{width:39px;height:39px;flex-basis:39px}.site-header .brand strong,.site-footer .brand strong{font-size:23px}.site-header .brand small,.site-footer .brand small{font-size:6px;letter-spacing:.035em}}
+
+/* Homepage: honor the request to remove the brand logo from the landing page only. */
+.homepage .site-header .brand{display:none}
+
+/* Homepage Saudi identity accent */
+.saudi-home-identity{display:inline-flex;align-items:center;gap:10px;margin:0 0 18px;padding:7px 12px;border-inline-start:2px solid #D5B77F;color:rgba(255,255,255,.9);font-size:clamp(12px,1.1vw,15px);letter-spacing:0;line-height:1.7;background:linear-gradient(90deg,rgba(213,183,127,.12),rgba(213,183,127,0));}
+.saudi-home-identity:before{content:"";display:inline-block;width:7px;height:7px;flex:0 0 7px;border-radius:50%;background:#D5B77F;box-shadow:0 0 0 4px rgba(213,183,127,.13)}
