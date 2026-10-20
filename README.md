@@ -6,8 +6,8 @@ A bilingual Arabic/English multi-page static website designed for GitHub Pages.
 - `index.html` — home page
 - `about.html`, `services.html`, `sectors.html`, `approach.html`, `insights.html`
 - Individual sector pages such as `sector-real-estate.html`, `sector-energy.html`, and others
-- `market-entry.html` — pre-market entry assessment and high-level market orientations for Portugal, Morocco, and Ethiopia
-- `market-study-portugal.html`, `market-study-morocco.html`, `market-study-ethiopia.html` — individual market study pages
+- `market-entry.html` — pre-market entry assessment and high-level market orientations for Saudi Arabia, Morocco, and Ethiopia
+- `market-study-saudi.html`, `market-study-morocco.html`, `market-study-ethiopia.html` — individual market study pages
 - `privacy.html` — general privacy policy
 - `inquiry.html` — inquiry form
 - `style.css`, `script.js`, `.nojekyll`

@@ -268,3 +268,63 @@ body{font-size:15px;line-height:1.95}
 .hero .hero-brand small{font-size:10px;letter-spacing:.015em;color:rgba(255,255,255,.83)}
 @media(max-width:720px){.hero .hero-brand{gap:14px}.hero .hero-brand-emblem{width:48px;height:48px;flex-basis:48px}.hero .hero-brand-mark{width:43px;height:43px}.hero .hero-brand-type{padding-inline-start:12px}.hero .hero-brand strong{font-size:31px;letter-spacing:.11em}.hero .hero-brand small{font-size:9px}}
 @media(max-width:520px){.hero .hero-brand{gap:11px}.hero .hero-brand-emblem{width:40px;height:40px;flex-basis:40px}.hero .hero-brand-mark{width:36px;height:36px}.hero .hero-brand-type{padding-inline-start:10px;gap:3px}.hero .hero-brand strong{font-size:26px;letter-spacing:.08em}.hero .hero-brand small{font-size:8px}.home-privacy-note{font-size:10px;padding:11px 0}}
+
+
+/* Inquiry page refinement */
+.inquiry-hero{min-height:410px;background-position:center 48%}
+.inquiry-hero .container{max-width:1160px}
+.inquiry-hero h1{max-width:850px;font-size:clamp(38px,5.2vw,66px)}
+.inquiry-section{background:linear-gradient(180deg,#f7f4ee 0%,#f0ede5 100%)}
+.inquiry-layout{display:grid;grid-template-columns:minmax(250px,.78fr) minmax(0,1.22fr);gap:clamp(28px,5vw,76px);align-items:start}
+.inquiry-intro{padding-top:12px}
+.inquiry-intro h2{font-size:clamp(28px,3vw,42px);line-height:1.45;margin:8px 0 18px}
+.inquiry-intro h2 em{font-style:normal;color:#a98750}
+.inquiry-points{margin:30px 0;border-top:1px solid #20354124}
+.inquiry-points>div{display:grid;grid-template-columns:38px 1fr;column-gap:12px;padding:16px 0;border-bottom:1px solid #20354124}
+.inquiry-points>div>span{grid-row:span 2;color:#b99762;font:700 12px Manrope,sans-serif;padding-top:3px}
+.inquiry-points p{margin:0;font-weight:700;font-size:14px}
+.inquiry-points small{font-size:12px;color:#667579}
+.inquiry-privacy{padding:14px 16px;border-inline-start:3px solid #b99762;background:#e9e5dc;color:#56656a;font-size:12px}
+.inquiry-form-card{border:1px solid #20354112;border-radius:5px;padding:clamp(22px,3vw,38px);box-shadow:0 22px 65px #142c3610}
+.form-card-heading{padding-bottom:20px;margin-bottom:22px;border-bottom:1px solid #20354118}
+.form-card-heading .eyebrow{margin:0 0 7px}
+.form-card-heading h2{font-size:clamp(23px,2.5vw,31px);line-height:1.4;margin:0 0 6px}
+.form-card-heading>p:last-child{margin:0;color:#718084;font-size:12px}
+.inquiry-fields{gap:20px 16px}
+.inquiry-fields .field label{font-size:12px}
+.inquiry-fields .field input,.inquiry-fields .field select,.inquiry-fields .field textarea{width:100%;min-width:0;border-radius:3px;border-color:#cfd1ca;background:#fff;padding:13px 14px;font-size:13px;transition:border-color .2s,box-shadow .2s}
+.inquiry-fields .field input:focus,.inquiry-fields .field select:focus,.inquiry-fields .field textarea:focus{outline:none;border-color:#b99762;box-shadow:0 0 0 3px #b9976226}
+.inquiry-fields .field textarea{resize:vertical;min-height:140px}
+.inquiry-fields .field-hint{color:#7a8586;font-size:11px;line-height:1.7}
+.inquiry-submit{padding-top:5px}
+.inquiry-submit>.btn{min-width:220px;cursor:pointer;border:0}
+.form-status{margin:10px 0;color:#073b3b;font-size:12px}
+.form-footnote{margin:14px 0 0;color:#7a8586;font-size:11px;line-height:1.8}
+.form-result{margin-top:18px;padding:18px;background:#f0ede5;border:1px solid #20354118}
+.form-result[hidden]{display:none}
+.form-result label{display:block;font-weight:700;font-size:12px;margin-bottom:8px}
+.form-result textarea{width:100%;padding:12px;background:#fff;border:1px solid #d6d5cd;font:inherit;font-size:12px;line-height:1.8;direction:auto;resize:vertical}
+.copy-inquiry{margin-top:10px;border:0;cursor:pointer}
+.copy-status{font-size:12px;margin-bottom:0;color:#073b3b}
+@media(max-width:850px){.inquiry-layout{grid-template-columns:1fr;gap:32px}.inquiry-intro{max-width:720px}.inquiry-points{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.inquiry-points>div{display:block;padding:14px 8px}.inquiry-points>div>span{display:block;margin-bottom:8px}.inquiry-points p{font-size:12px}.inquiry-points small{font-size:11px}.inquiry-form-card{padding:26px}}
+@media(max-width:520px){.inquiry-hero{min-height:360px}.inquiry-points{grid-template-columns:1fr}.inquiry-points>div{display:grid;grid-template-columns:32px 1fr;padding:12px 0}.inquiry-points>div>span{grid-row:span 2;margin:0}.inquiry-fields{grid-template-columns:1fr}.inquiry-fields .field.full{grid-column:auto}.inquiry-form-card{padding:20px}.inquiry-submit>.btn{width:100%;text-align:center}}
+
+
+/* RASEEN Saudi identity + upright Arabic typography */
+em, i, cite, dfn, var { font-style: normal; }
+.saudi-identity{display:inline-flex;align-items:center;gap:10px;margin:0 0 24px;padding:7px 12px;border-inline-start:3px solid #2f7b57;background:#ffffff12;color:#f1e8d7;font-size:13px;font-weight:500;letter-spacing:0;backdrop-filter:blur(5px)}
+.saudi-identity:before{content:"";width:7px;height:7px;border-radius:50%;background:#4b9b70;box-shadow:0 0 0 4px #4b9b7020;flex:0 0 auto}
+/* Consistent non-italic Arabic across headings, emphasized phrases and card copy */
+html[lang="ar"] body,html[lang="ar"] body *{font-style:normal}
+
+.hero{background-image:linear-gradient(90deg,#102b37ed 0%,#102b37b8 48%,#102b3740 100%),url("https://commons.wikimedia.org/wiki/Special:FilePath/Riyadh_Skyline.jpg?width=2200");background-position:center;background-size:cover}
+
+.hero{position:relative}.hero-photo-credit{position:absolute;bottom:12px;inset-inline-end:20px;color:#ffffffb8;font-size:10px;line-height:1.4;text-decoration:underline;text-underline-offset:3px}.hero-photo-credit:hover{color:#fff}
+
+
+/* RASEEN typography refinement: confident, upright corporate Arabic */
+html[lang="ar"], html[lang="ar"] body { font-family: 'IBM Plex Sans Arabic', 'Noto Sans Arabic', Arial, sans-serif; font-synthesis: none; }
+html[lang="ar"] body, html[lang="ar"] body * { font-style: normal !important; }
+html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] h4, html[lang="ar"] .brand strong, html[lang="ar"] .btn, html[lang="ar"] .nav { font-family: 'IBM Plex Sans Arabic', 'Noto Sans Arabic', Arial, sans-serif; font-weight: 600; letter-spacing: 0; }
+html[lang="ar"] h1, html[lang="ar"] .hero h1, html[lang="ar"] .page-hero h1 { font-weight: 700; }
+html[lang="ar"] .hero em, html[lang="ar"] .section-heading em, html[lang="ar"] .inquiry-intro h2 em { font-style: normal !important; }
